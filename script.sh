@@ -11,7 +11,7 @@ if [[ -z $INPUT_KEY ]]; then
 fi
 
 host="https://api.day.app"
-if [[ -n $INPUT_HOST]]; then
+if [[ -n $INPUT_HOST ]]; then
     host=$INPUT_HOST
 fi
 
