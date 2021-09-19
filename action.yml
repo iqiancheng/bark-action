@@ -1,4 +1,4 @@
-name: 'Bark Action'
+name: 'Bark Action with custom host'
 description: 'An action for bark with custom host supported'
 author: Ji Yuanhao <jiyuanhao1997@gmail.com>
 branding:
