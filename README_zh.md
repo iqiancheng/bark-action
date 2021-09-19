@@ -5,7 +5,8 @@
 ![](https://img.shields.io/github/stars/shink/bark-action.svg?label=stars&logo=github)
 ![](https://img.shields.io/github/forks/shink/bark-action.svg?label=forks&logo=github)
 
-Fork from <https://github.com/shink/bark-action> add custom host support
+Fork from <https://github.com/shink/bark-action>, 添加了自定义host设置  
+
 An action for [Finb/Bark](https://github.com/Finb/Bark)
 
 ## Usage
@@ -21,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Push notifications
-        uses: shink/bark-action@v1
+        uses: daolanfler/bark-action@v1
         with:
           host: ${{ secrets.BARK_HOST}} # If you deploy your own bark or else use default
           key: ${{ secrets.KEY }}   # Your secret key
