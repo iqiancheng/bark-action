@@ -24,6 +24,7 @@ jobs:
       - name: Push notifications
         uses: shink/bark-action@v1
         with:
+          host: ${{ secrets.BARK_HOST}} # If you deploy your own bark or else use default
           key: ${{ secrets.KEY }}   # Your secret key
           title: Message title
           body: Message body
@@ -36,6 +37,7 @@ jobs:
 
 > Among them, only the `key` parameter is required
 
+- `host`: bark service host, default is  <https://api.day.app>
 - `title`: Message title (a bit thicker than the content font size)
 - `body`: Message content
 - `sound`: [Push notification sound](https://github.com/Finb/Bark/tree/master/Sounds)

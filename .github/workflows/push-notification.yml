@@ -14,6 +14,7 @@ jobs:
       - name: Push notifications
         uses: ./
         with:
+          host: ${{ secrets.HOST }}
           key: ${{ secrets.KEY }}
           title: Message title
           body: Message body

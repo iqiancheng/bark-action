@@ -11,6 +11,10 @@ if [[ -z $INPUT_KEY ]]; then
 fi
 
 host="https://api.day.app"
+if [[ -n $INPUT_HOST]]; then
+    host=$INPUT_HOST
+fi
+
 request_url=$host/$INPUT_KEY/
 request_body="title=${INPUT_TITLE}&body=${INPUT_BODY}&sound=${INPUT_SOUND}&isArchive=${INPUT_ISARCHIVE}&url=${INPUT_URL}&automaticallyCopy=${INPUT_AUTOMATICALLYCOPY}&copy=${INPUT_COPY}"
 
