@@ -1,5 +1,5 @@
 name: 'Bark Action'
-description: 'An action for bark'
+description: 'An action for bark with custom host supported'
 author: Ji Yuanhao <jiyuanhao1997@gmail.com>
 branding:
   icon: 'message-circle'
