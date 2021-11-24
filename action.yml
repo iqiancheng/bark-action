@@ -1,12 +1,12 @@
-name: 'Bark Action with custom host'
-description: 'An action for bark with custom host supported'
+name: 'Bark Action'
+description: 'An action for bark with custom http host supported'
 author: Ji Yuanhao <jiyuanhao1997@gmail.com>
 branding:
   icon: 'message-circle'
-  color: 'red'
+  color: 'green'
 inputs:
   host: 
-    description: bark service host
+    description: bark service http host(not https)
     required: false
   key:
     description: Secret key
