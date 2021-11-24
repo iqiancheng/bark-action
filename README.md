@@ -20,7 +20,7 @@ on: [push]
 
 jobs:
   job:
-    name: Push notification job
+    name: Push Notifications
     runs-on: ubuntu-latest
     steps:
       - name: Push notifications
