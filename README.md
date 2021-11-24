@@ -5,7 +5,7 @@
 ![](https://img.shields.io/github/stars/shink/bark-action.svg?label=stars&logo=github)
 ![](https://img.shields.io/github/forks/shink/bark-action.svg?label=forks&logo=github)
 
-Fork from <https://github.com/shink/bark-action>, add custom host support  
+Github Actions 支持 Bark 通知消息
 
 An action for [Finb/Bark](https://github.com/Finb/Bark)
 
