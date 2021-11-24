@@ -10,6 +10,11 @@ if [[ -z $INPUT_KEY ]]; then
     exit -1
 fi
 
+if [[ -z $INPUT_HOST ]]; then
+    echo -e "${red}ERROR: BARK_HOST is a required parameter${none}"
+    exit -1
+fi
+
 host="https://api.day.app"
 if [[ -n $INPUT_HOST ]]; then
     host=$INPUT_HOST
@@ -21,5 +26,5 @@ request_body="title=${INPUT_TITLE}&body=${INPUT_BODY}&sound=${INPUT_SOUND}&isArc
 echo -e "${cyan}Request url${none}: ${request_url}"
 echo -e "${cyan}Request body${none}:\n${request_body//&/\\n}"
 
-res=`curl -s -X POST -d "${request_body}" ${request_url}`
+res=`curl -X POST -d "${request_body}" ${request_url}`
 echo -e "${green}Result${none}: ${res}"
